@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+
+
+
+<body>
+
+    <center>
+
+    <h1>TO-DO</h1>
+
+    <input type="text" id="todoInput" placeholder="Enter Task">
+    <button id="addBtn" onclick="addTask()">Add Task</button>
+
+    <style>
+        
+body{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #8b0000,#000);
+
+
+}
+
+h1{
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+input{
+    
+    background-color: black;
+    color: aliceblue; 
+    border: 1px solid white;
+
+}
+input::placeholder{
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+button{
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: smaller;
+    border:1px solid #8b0000;
+    
+}
+
+#taskList li {
+
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    color: yellow;
+}
+
+    </style>
+    <ul id="taskList"></ul>
+
+    </center>
+    
+</body>
+<script src="./app.js"></script>
+</html>
